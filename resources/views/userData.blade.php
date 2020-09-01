@@ -31,33 +31,7 @@
                     </form>
                 </div>
             </div>
-             <!-- Export Excel/ Imported Data View Part in table-->
-            <div class="row">
-                <h4 class="col-lg-10" style="color:#20c997">User Data List</h4>
-                <a class="col-lg-2 btn btn-sm " style="margin-bottom:1%; color:#ffff; background-color:#20c997" href="{{ route('export') }}">Export User Data</a>
-                <table class=" col-lg-12 table table-striped table-borderless table-responsive-sm">
-                    <thead style="color:#ffff; background-color:#20c997">
-                    <tr>
-                        <th>Name</th>
-                        <th>Phone No</th>
-                        <th>Email ID</th>
-                        <th>Company</th>
-                        <th>Designation</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    @foreach($user as $userValue)
-                    <tr>
-                        <td>{{$userValue->name}}</td>
-                        <td>{{$userValue->mobile_number}}</td>
-                        <td>{{$userValue->email_id}}</td>
-                        <td>{{$userValue->company}}</td>
-                        <td>{{$userValue->designation}}</td>
-                    </tr>
-                    @endforeach
-                    </tbody>
-                </table>
-            </div>
+
         </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
         <script src="http://malsup.github.com/jquery.form.js"></script>

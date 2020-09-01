@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class UserData extends Model
 {
+   
     public $timestamps = true;
       /**
      * The attributes that are mass assignable.

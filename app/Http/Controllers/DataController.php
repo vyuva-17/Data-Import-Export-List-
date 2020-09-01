@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\UserData;
+use App\ImportData;
 use Illuminate\Http\Request;
 use App\Exports\UsersExport;
 use App\Imports\UsersImport;
@@ -14,17 +14,16 @@ class DataController extends Controller
     */
     public function importExportView()
     {
-        $user=UserData::all();
-       return view('userData',compact('user'));
+       return view('userData');
     }
 
     /**
     * @return \Illuminate\Support\Collection
     */
-    public function export()
+    /*public function export()
     {
         return Excel::download(new UsersExport, 'users.xlsx');
-    }
+    }*/
 
     /**
     * @return \Illuminate\Support\Collection
